@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Task.destroy_all
+Task.create(title: 'Go to bjj', description: 'time to suit up', completed: false)
+
+Task.create(title: 'Feed the cat', completed: true)
